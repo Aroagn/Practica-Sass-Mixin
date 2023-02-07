@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto:wght@300&family=Rubik+Vinyl&display=swap");
+.navbar {
+  display: grid;
+  grid-template-columns: 8% 42% 50%;
+  margin: 2% 3% 0 3%;
+}
+.navbar img {
+  grid-column: 1/2;
+  height: 100%;
+  width: 100%;
+}
+.navbar__h1 {
+  grid-column: 2/3;
+}
+.navbar__h1 .logo {
+  color: #842525;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Rubik Vinyl", cursive;
+  padding-left: 5%;
+}
+.navbar__ul {
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+  list-style: none;
+}
+.navbar__ul .a {
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+.navbar__ul .a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #bebebe;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3%;
+}
+footer .redes {
+  grid-area: 1/1/2/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 0 2% 5%;
+  gap: 1em;
+}
+footer .redes p {
+  color: black;
+  font-weight: none;
+  font-size: 1em;
+}
+footer .redes img {
+  height: 2em;
+  width: 2em;
+}
+footer #licencia {
+  grid-area: 1/2/2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 5% 2% 0;
+}
+footer #licencia a {
+  color: black;
+  font-weight: none;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+footer #licencia a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Roboto", sans-serif;
+  background-image: url(/img/img2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  border-radius: 3em;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  -webkit-box-shadow: -3em -3em 9em main #bebebe, -3em -3em 9em #ffffff;
+          box-shadow: -3em -3em 9em main #bebebe, -3em -3em 9em #ffffff;
+  margin: 2% 15% 2% 15%;
+  padding: 3%;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .left {
+  grid-column: 1/2;
+  text-align: center;
+}
+main .left__a p {
+  color: black;
+  font-weight: none;
+  font-size: 1.5em;
+  padding: 2%;
+}
+main .left__a h1 {
+  color: #842525;
+  font-weight: bold;
+  font-size: 2.5em;
+  font-family: "Gruppo", cursive;
+  padding: 2%;
+}
+main .left__b p {
+  color: black;
+  font-weight: none;
+  font-size: 1.5em;
+  font-family: "Gruppo", cursive;
+  padding: 2%;
+}
+main .left__b button {
+  border-radius: 2em;
+  font-size: 1em;
+  background: #bebebe;
+  padding: 2%;
+  margin: 5%;
+  padding: 3%;
+}
+main .right {
+  grid-column: 3/4;
+}
+main .right img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2em;
+}

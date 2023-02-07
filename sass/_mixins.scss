@@ -1,0 +1,56 @@
+// Font
+$font_logo: 'Rubik Vinyl', cursive;
+$font_body: 'Roboto', sans-serif;
+$font_title: 'Gruppo', cursive;
+
+
+// Colors
+$color_body: #e0e0e0;
+$color_logo: #842525;
+$color_link: black;
+$color_gray1: #f0f0f0;
+$color_gray2: #cacaca;
+$color_gray3: #bebebe;
+$color_gray4: #ffffff;
+
+// Mixins
+@mixin fondo() {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@mixin letras($argumento1, $argumento2, $argumento3){ 
+    color: $argumento1;
+    font-weight: $argumento2;
+    font-size: $argumento3;
+}
+
+@mixin flex ($dis, $dir, $corte, $just, $ali){
+    display: $dis;
+    flex-flow: $dir $corte;
+    justify-content: $just;
+    align-items: $ali;
+}
+
+@mixin neo ($radius, $eje){
+    border-radius: $radius;
+    background: linear-gradient(145deg, $color_gray1, $color_gray2);
+    box-shadow: (-$eje) (-$eje) ($eje*3) &$color_gray3, 
+        (-$eje) (-$eje) ($eje*3) $color_gray4;
+}
+
+@mixin button ($button1, $button2, $button3, $button4){
+    border-radius: $button1;    
+    font-size: $button2;
+    background: $color_gray3;
+    padding: $button3;
+    margin: $button4;
+}
+
+@mixin footer($disp, $just, $align) {
+    display: $disp;
+    justify-content: $just;
+    align-items: $align;
+}

@@ -1,0 +1,41 @@
+footer {
+    background-color: $color_gray3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+
+    .redes {
+        grid-area: 1/1/2/2;
+        @include footer(flex, flex-start, center);
+        padding: 2% 0 2% 5%;
+        gap: 1em;
+
+
+        p {
+            @include letras($color_link, none, 1em);
+        }
+
+        img {
+            height: 2em;
+            width: 2em;
+        }
+    } 
+
+    #licencia {
+        grid-area: 1/2/2/3;     
+        @include footer(flex, flex-end, center);
+        padding: 2% 5% 2% 0;
+
+        a {    
+            @include letras($color_link, none, 0.8em);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+

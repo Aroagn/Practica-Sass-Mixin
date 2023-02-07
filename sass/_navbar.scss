@@ -1,0 +1,37 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 8% 42% 50%;
+    margin: 2% 3% 0 3%;
+
+    img {
+        grid-column: 1/2;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__h1 { 
+        grid-column: 2/3;
+
+        .logo{
+            @include letras ($color_logo, bold, 2em);
+            font-family: $font_logo;
+            padding-left: 5%;
+        }    
+    }
+
+    &__ul {
+        grid-column: 3/4;
+        @include flex (flex, row, nowrap, right, flex-start);
+        gap: 1em;
+        list-style: none;
+
+        .a {
+            @include letras ($color_link, bold, 1em);
+            text-decoration: none;
+        
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
